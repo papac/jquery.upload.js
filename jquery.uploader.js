@@ -54,7 +54,8 @@
                     return option.done(data, reader.result);
                 });
                 return reader.readAsDataURL(option.target);
-            }
+            },
+			error: option.error
         });
     };
 })(jQuery, window);
